@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2f6ee" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#09130e" media="(prefers-color-scheme: dark)">
 <title>The Global Table — Café in Airoli, Navi Mumbai</title>
 <meta name="description" content="The Global Table, a neighbourhood café in Airoli, Navi Mumbai. Explore 91 fusion dishes across street bites, Indo-Chinese, Mexican-inspired food, pizzas, salads and refreshing drinks.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -199,6 +200,133 @@ footer{flex-direction:column}.fg{display:flex;justify-content:space-between;flex
   .hero .row:not(.chips) { grid-template-columns: 1fr; }
 }
 
+
+/* =====================================================================
+   MOBILE POLISH — additive only. Nothing above this line was changed.
+   Delete this whole block (and the .mnav div) to revert to the previous version.
+   ===================================================================== */
+html{-webkit-text-size-adjust:100%}
+.mnav{display:none}
+
+@media (max-width:800px){
+  *{-webkit-tap-highlight-color:transparent}
+  body{font-size:1rem}
+
+  /* --- Top bar: fit logo + theme + cart + sign-in on small phones --- */
+  nav{padding:calc(9px + env(safe-area-inset-top,0px)) 4.5vw 9px;gap:.5rem}
+  .logo{font-size:1.08rem;white-space:nowrap}
+  nav .r{gap:.4rem}
+  #th,.ib{width:38px;height:38px}
+  nav .btn.s{padding:.5em .95em;font-size:.8rem;min-height:38px;justify-content:center}
+  #acct{display:block;max-width:92px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:1.7}
+
+  /* --- Bottom tab bar (replaces the hidden desktop links) --- */
+  .mnav{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:55;
+    background:var(--nav);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line);
+    padding:5px 6px calc(5px + env(safe-area-inset-bottom,0px))}
+  .mnav a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 0 4px;border-radius:12px;
+    font-size:.68rem;font-weight:700;letter-spacing:.04em;color:var(--mute);transition:color .2s}
+  .mnav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  body[data-v="home"] .mnav a[data-k="home"],body[data-v="menu"] .mnav a[data-k="menu"]{color:var(--accent)}
+  #toast{bottom:calc(82px + env(safe-area-inset-bottom,0px));width:max-content;max-width:90vw;text-align:center}
+
+  /* --- Sections, headings, marquee --- */
+  #v-home section{padding:4.2rem 6vw}
+  h2{font-size:clamp(2rem,9vw,2.6rem);line-height:1.05}
+  .eye{font-size:.7rem;margin-bottom:.7rem}
+  .mq{font-size:1.55rem;padding:1.6vh 0}
+  .mq b{-webkit-text-stroke:1px var(--ink)}
+  #story p{font-size:clamp(1.3rem,5.6vw,1.6rem);line-height:1.35}
+  .rv{transform:translateY(24px)}
+
+  /* --- Story stats: 2 up + 1 full width --- */
+  .stats{grid-template-columns:1fr 1fr;gap:12px}
+  #story .stats{margin-top:2.6rem}
+  .stat{padding:1.2rem;border-radius:18px}
+  #story .stat b{font-size:2.6rem}
+  .stat span{font-size:.85rem;display:block;margin-top:.35rem;line-height:1.4}
+  #story .stat:last-child{grid-column:1/-1}
+
+  /* --- Section header: stack title + button --- */
+  .sh{gap:1rem;margin-bottom:1.6rem}
+  #sig .sh{flex-direction:column;align-items:flex-start}
+
+  /* --- Signature bento --- */
+  .bento{grid-auto-rows:auto;grid-template-rows:250px 190px 210px 190px;gap:12px}
+  .b{border-radius:20px}
+  .b div{padding:.9rem 1rem;font-size:1.02rem;line-height:1.15}
+  .b small{font-size:.6rem;letter-spacing:.14em}
+  .b.t{padding:1.1rem;font-size:1.35rem}
+
+  /* --- Reviews --- */
+  .tags{gap:.45rem;margin-bottom:1.6rem}
+  .tags span{font-size:.8rem}
+  .rev{padding:1.4rem;border-radius:18px;gap:.7rem}
+  .rev .q{font-size:3rem}
+  .rev q{font-size:1.08rem}
+  .grid{gap:14px}
+
+  /* --- Visit --- */
+  .visit{gap:22px}
+  .info p a{display:inline-block;padding:.3rem 0}
+  .info .row .btn{flex:1 1 140px;justify-content:center}
+  .box{padding:1.2rem 1.3rem;border-radius:20px}
+  .map-frame{border-radius:20px;min-height:0}
+
+  /* --- Inner pages (menu / account / admin) --- */
+  .pg{padding:calc(88px + env(safe-area-inset-top,0px)) 5vw 4rem;min-height:100svh}
+  .sh .in{max-width:100%}
+  .in,select.in,input.in{font-size:16px;min-height:46px}  /* stops iOS zoom-on-focus */
+  .btn{min-height:44px;justify-content:center}.btn.s{min-height:36px}
+  .qt button{width:36px;height:36px}
+  .auth{padding:1.5rem;border-radius:22px}
+  .ord{padding:1rem 1.1rem}
+  table{min-width:620px}
+
+  /* --- Cart drawer --- */
+  #cart{width:100%;border-left:0;padding-left:20px;padding-right:20px}
+
+  /* --- Footer clears the tab bar --- */
+  footer{padding:2.2rem 6vw calc(5.8rem + env(safe-area-inset-bottom,0px));text-align:center;align-items:center}
+  .fg{flex-direction:column;align-items:center;gap:.9rem}
+  .fl{gap:1.2rem;flex-wrap:wrap;justify-content:center}
+}
+
+@media (max-width:600px){
+  /* Menu categories: one swipeable, sticky row instead of 10 wrapped chips */
+  #chips{position:sticky;top:calc(56px + env(safe-area-inset-top,0px));z-index:20;display:flex;flex-wrap:nowrap;gap:.5rem;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -5vw 1rem;padding:.6rem 5vw;
+    background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  #chips::-webkit-scrollbar{display:none}
+  #chips .chip{flex:none;white-space:nowrap;min-height:38px}
+
+  /* Menu items: compact photo-left list cards (far less scrolling for 90+ dishes) */
+  .mg{grid-template-columns:1fr;gap:12px}
+  .mi{display:grid;grid-template-columns:112px minmax(0,1fr);border-radius:18px}
+  .mi:hover{transform:none;box-shadow:none}
+  .mp{aspect-ratio:auto;position:relative;min-height:128px}
+  .mp img{position:absolute;inset:0}
+  .mp span{font-size:2.6rem}
+  .mb{padding:.8rem .9rem;gap:.3rem}
+  .mt{gap:.5rem}
+  .mt h3{font-size:1.02rem;line-height:1.2}
+  .mt b{font-size:.95rem;white-space:nowrap}
+  .mb p{font-size:.8rem;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .mf{margin-top:auto}
+  .mf .btn.s{padding:.45em 1.1em;font-size:.82rem}
+}
+
+@media (max-width:360px){
+  .logo{font-size:.98rem}
+  #acct{max-width:70px}
+  .mi{grid-template-columns:96px minmax(0,1fr)}
+}
+
+/* No sticky hover states on touch screens */
+@media (hover:none){
+  .btn:hover,.b:hover,.b.t:hover,.card:hover{transform:none;box-shadow:none}
+  .b:hover img{--sc:1.14}
+}
 </style></head><body data-v="home">
 <div id="bar"></div><canvas id="gl" aria-hidden="true"></canvas>
 <nav><a href="#home" class="logo">The Global <i>Table</i></a>
@@ -253,6 +381,12 @@ footer{flex-direction:column}.fg{display:flex;justify-content:space-between;flex
 </div>
 <section class="view pg" id="v-menu"></section><section class="view pg" id="v-account"></section><section class="view pg" id="v-admin"></section></main>
 <footer><div class="fg"><span>© 2026 The Global Table · Airoli, Navi Mumbai</span><div class="fl"><a href="#menu">Menu</a><a href="#account">Account</a><a href="#admin">Staff login</a></div></div></footer>
+<div class="mnav" role="navigation" aria-label="Main">
+<a href="#home" data-s="top" data-k="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Home</a>
+<a href="#menu" data-k="menu"><svg viewBox="0 0 24 24"><path d="M7 3v8a2 2 0 002 2v8M11 3v8a2 2 0 01-2 2M7 3v6M17 21V3c-2 1-3 4-3 8h3"/></svg>Menu</a>
+<a href="#home" data-s="reviews" data-k="reviews"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Reviews</a>
+<a href="#home" data-s="visit" data-k="visit"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Visit</a>
+</div>
 <aside id="cart"></aside><div id="bd" data-act="cart"></div><div id="toast" role="status"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
