@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Global Table — Café in Airoli, Navi Mumbai</title>
+<meta name="description" content="The Global Table, a neighbourhood café in Airoli, Navi Mumbai. Explore 91 fusion dishes across street bites, Indo-Chinese, Mexican-inspired food, pizzas, salads and refreshing drinks.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;700&family=Noto+Sans+Devanagari:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f6ee;--bg2:#dfe9d6;--ink:#10231a;--mute:#52685a;--accent:#1d6b43;--onacc:#fff;--card:#fbfdf9;--line:#10231a1f;--nav:#f2f6eed9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#09130e;--bg2:#12241a;--ink:#e6f1e4;--mute:#9bb3a2;--accent:#5fd18a;--onacc:#06140c;--card:#0f1d15;--line:#e6f1e41f;--nav:#09130ed9}}
+:root[data-theme="dark"]{--bg:#09130e;--bg2:#12241a;--ink:#e6f1e4;--mute:#9bb3a2;--accent:#5fd18a;--onacc:#06140c;--card:#0f1d15;--line:#e6f1e41f;--nav:#09130ed9}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 'DM Sans',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;transition:background .4s,color .4s}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--nav);z-index:60}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.05;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+#gl{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+main,footer{position:relative;z-index:1}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0);z-index:70}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:calc(12px + env(safe-area-inset-top,0px)) 5vw 12px;background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font:600 1.25rem Fraunces,serif}.logo i{color:var(--accent)}
+nav .l{display:flex;gap:2rem;font-weight:500;font-size:.95rem}nav .l a:hover{color:var(--accent)}
+nav .r{display:flex;gap:.6rem;align-items:center}
+#th{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:none;color:var(--ink);font-size:1.1rem;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:.75em 1.4em;border-radius:99px;background:var(--accent);color:var(--onacc);font-weight:700;font-size:.95rem;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px -8px var(--accent)}
+.btn.o{background:none;border:1.5px solid var(--ink);color:var(--ink)}
+section{padding:14vh 6vw}.wrap{max-width:1180px;margin:auto}
+.eye{font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:var(--accent);margin-bottom:1rem}
+.hero{min-height:100svh;display:flex;align-items:center;padding:12vh 6vw 6vh}
+.hero-in{max-width:620px}
+.hero-in>*{opacity:0;transform:translateY(26px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*.12s + .15s)}
+@keyframes up{to{opacity:1;transform:none}}
+.hi{font:600 1.1rem 'Noto Sans Devanagari',sans-serif;color:var(--accent);letter-spacing:.06em;margin-bottom:.8rem}
+h1{font-size:clamp(2.9rem,8vw,6.2rem)}h1 em{color:var(--accent);font-weight:400}
+.hero p{margin:1.4rem 0 1.8rem;color:var(--mute);font-size:1.15rem;max-width:34em}
+.row{display:flex;flex-wrap:wrap;gap:.7rem}
+.chips{margin-top:2rem}.chips span,.tags span{padding:.35em .9em;border:1px solid var(--line);border-radius:99px;font-size:.85rem;background:var(--card)}
+.mq{overflow:hidden;white-space:nowrap;padding:2.5vh 0;border-block:1px solid var(--line);font:600 clamp(2rem,6vw,4.4rem)/1.1 Fraunces,serif;position:relative;z-index:1}
+.mq div{display:inline-block;will-change:transform}.mq b{color:transparent;-webkit-text-stroke:1.5px var(--ink);font-weight:600}
+#story p{font:400 clamp(1.5rem,3.3vw,2.7rem)/1.3 Fraunces,serif;max-width:900px;letter-spacing:-.01em}
+#story p span{opacity:.16;transition:opacity .45s}#story p span.on{opacity:1}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:8vh}
+.stat{padding:2rem;border-radius:22px;background:var(--card);border:1px solid var(--line)}
+.stat b{display:block;font:600 3.6rem/1 Fraunces,serif;color:var(--accent)}.stat span{color:var(--mute);font-size:.95rem}
+h2{font-size:clamp(2.2rem,5.5vw,4rem);margin-bottom:1rem}.sub{color:var(--mute);max-width:36em;margin-bottom:3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+.rv{opacity:0;transform:translateY(44px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:14px 14px 1.6rem;height:100%;transition:transform .15s ease-out,box-shadow .3s;will-change:transform}
+.card:hover{box-shadow:0 24px 50px -24px #000a}
+.ph{aspect-ratio:4/3;border-radius:14px;display:grid;place-items:center;font-size:4.2rem;margin-bottom:1.1rem;background:linear-gradient(135deg,var(--bg2),color-mix(in srgb,var(--accent) 38%,var(--bg2)))}
+.ph span{transition:transform .5s;filter:drop-shadow(0 14px 12px #0005)}.card:hover .ph span{transform:scale(1.22) rotate(-8deg)}
+.card h3{font-size:1.45rem;padding:0 .6rem}.card p{color:var(--mute);padding:.4rem .6rem 0;font-size:.97rem}
+.card small{display:inline-block;margin:.8rem .6rem 0;color:var(--accent);font-weight:700;letter-spacing:.1em;font-size:.72rem;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.5rem}
+.rev{padding:2rem;border-radius:22px;background:var(--card);border:1px solid var(--line);height:100%;display:flex;flex-direction:column;gap:1rem}
+.rev .q{font:600 4rem/.5 Fraunces,serif;color:var(--accent)}.rev q{quotes:"“" "”";font:400 1.2rem/1.5 Fraunces,serif;flex:1}
+.rev .st{color:var(--accent);letter-spacing:.2em}.rev small{color:var(--mute)}
+.visit{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.box{padding:2.2rem;border-radius:26px;background:var(--card);border:1px solid var(--line)}
+.box li{list-style:none;padding:.9rem 0;border-bottom:1px solid var(--line);display:flex;gap:.8rem;font-weight:500}.box li:last-child{border:0}.box li::before{content:"✦";color:var(--accent)}
+.info p{margin:.3rem 0;color:var(--mute)}.info strong{color:var(--ink)}.info .row{margin-top:1.8rem}
+footer{padding:5vh 6vw calc(5vh + 20px);border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;color:var(--mute);font-size:.9rem;background:var(--bg)}
+@media(max-width:800px){nav .l{display:none}.visit{grid-template-columns:1fr}.hero{align-items:flex-end}section{padding:10vh 6vw}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero-in>*{opacity:1;transform:none}}
+
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(55% 45% at 88% 8%,color-mix(in srgb,var(--accent) 16%,transparent),transparent),radial-gradient(40% 40% at 0% 100%,color-mix(in srgb,var(--accent) 10%,transparent),transparent)}
+nav .l a{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.ib{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:none;color:var(--ink);cursor:pointer;position:relative;display:grid;place-items:center}
+.ib i{position:absolute;top:-4px;right:-4px;min-width:18px;height:18px;border-radius:9px;background:var(--accent);color:var(--onacc);font:700 .7rem/18px 'DM Sans',sans-serif;font-style:normal;text-align:center}
+.btn.s{padding:.55em 1.15em;font-size:.85rem}button.btn{border:0;cursor:pointer;font-family:inherit}button.btn.o{border:1.5px solid var(--ink)}
+.view{display:none}.view.on{display:block}body:not([data-v="home"]):not([data-v=""]) #gl{display:none}
+.pg{padding:calc(15vh + 20px) 6vw 12vh;min-height:100vh;max-width:1260px;margin:auto}
+.sh{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.2rem;margin-bottom:2.5rem}.sh h2{margin:0}
+.in{width:100%;padding:.85em 1.1em;border-radius:14px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:.95rem}.in:focus{outline:2px solid var(--accent);outline-offset:1px}.sh .in{max-width:340px}
+.chip{padding:.5em 1.1em;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:500 .88rem 'DM Sans',sans-serif;cursor:pointer;transition:.2s}.chip.on,.chip:hover{background:var(--accent);color:var(--onacc);border-color:var(--accent)}
+.tags{margin-bottom:2rem}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(170px,23vw,290px);gap:16px;grid-template-areas:"a a b d" "a a c d" "e e f f"}
+.b{position:relative;border-radius:26px;overflow:hidden;display:block;background:var(--bg2)}
+.b img{width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--py,0px),0) scale(var(--sc,1.14));transition:transform .9s cubic-bezier(.2,.7,.2,1)}.b:hover img{--sc:1.24}
+.b div{position:absolute;inset:auto 0 0;padding:1.3rem 1.4rem;color:#fff;font:600 1.35rem Fraunces,serif;background:linear-gradient(transparent,#000b)}.b small{display:block;font:700 .7rem 'DM Sans';letter-spacing:.16em;text-transform:uppercase;opacity:.8;margin-bottom:.2rem}
+.b.t{background:var(--accent);color:var(--onacc);display:flex;align-items:flex-end;padding:1.6rem;font:600 clamp(1.6rem,3.2vw,2.8rem)/1.05 Fraunces,serif;transition:transform .4s}.b.t:hover{transform:scale(.985)}
+.mg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:22px}
+.mi{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s}.mi:hover{transform:translateY(-6px);box-shadow:0 24px 44px -26px #000c}
+.mp{aspect-ratio:4/3;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--bg2),color-mix(in srgb,var(--accent) 30%,var(--bg2)))}.mp img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.mi:hover .mp img{transform:scale(1.07)}.mp span{font:600 4.5rem Fraunces,serif;color:var(--accent);opacity:.7}
+.mb{padding:1.1rem 1.2rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;flex:1}.mt{display:flex;justify-content:space-between;gap:.6rem;align-items:baseline}.mt h3{font-size:1.2rem;letter-spacing:-.01em}.mt b{color:var(--accent)}.mb p{color:var(--mute);font-size:.9rem;flex:1}
+.mf{display:flex;justify-content:space-between;align-items:center}.vg{width:16px;height:16px;border:1.5px solid #2e9e57;display:grid;place-items:center;border-radius:3px}.vg::after{content:"";width:8px;height:8px;border-radius:50%;background:#2e9e57}.vg.n{border-color:#c0392b}.vg.n::after{background:#c0392b}.vg.u{border-color:#8a8f98}.vg.u::after{background:#8a8f98}
+.mi.so{opacity:.55}.note{color:var(--mute);font-size:.88rem;margin-top:1rem}.ul{text-decoration:underline;color:var(--accent);font-weight:700}
+#cart{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);z-index:90;background:var(--bg);border-left:1px solid var(--line);transform:translateX(105%);transition:transform .45s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column;padding:calc(20px + env(safe-area-inset-top,0px)) 24px calc(20px + env(safe-area-inset-bottom,0px))}#cart.open{transform:none}
+#bd{position:fixed;inset:0;background:#0009;z-index:80;opacity:0;pointer-events:none;transition:.3s}#bd.on{opacity:1;pointer-events:auto}
+.ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}.cl{flex:1;overflow:auto}.ci{display:flex;justify-content:space-between;align-items:center;padding:.9rem 0;border-bottom:1px solid var(--line)}.ci p{color:var(--mute);font-size:.88rem}
+.qt{display:flex;gap:.7rem;align-items:center}.qt button{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:1rem}
+.cf{display:grid;gap:.9rem;padding-top:1rem}.tr{display:flex;justify-content:space-between;font-size:1.2rem}
+.auth{max-width:440px;margin:0 auto;display:grid;gap:.9rem;padding:2.2rem;background:var(--card);border:1px solid var(--line);border-radius:26px}.err{color:#d6453d;min-height:1.2em;font-size:.88rem}
+.ord{display:flex;justify-content:space-between;gap:1rem;padding:1.2rem 1.4rem;background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:.8rem}.ord p{color:var(--mute);font-size:.9rem}.rt{text-align:right;display:grid;gap:.3rem;justify-items:end}.pill{padding:.2em .8em;border-radius:99px;background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);font-size:.78rem;font-weight:700}
+.dash .stat b{font-size:2.3rem}.tw{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:var(--card)}table{width:100%;border-collapse:collapse;font-size:.9rem}th{text-align:left;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}th,td{padding:.8rem 1rem;border-bottom:1px solid var(--line)}td .in{padding:.5em .8em;min-width:120px}.sm{max-width:100px}
+.af{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.7rem;margin-bottom:1.5rem}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:.8em 1.5em;border-radius:99px;font-weight:500;font-size:.9rem;opacity:0;pointer-events:none;transition:.35s;z-index:99}#toast.on{opacity:1;transform:translate(-50%,0)}
+footer{flex-direction:column}.fg{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}footer a:hover{color:var(--accent)}.fl{display:flex;gap:1.6rem}
+@media(max-width:800px){.bento{grid-template-columns:1fr 1fr;grid-template-areas:"a a" "b c" "d d" "f e"}.nl{display:none}}
+.map-frame{grid-column:1/-1;min-height:320px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--panel)}.map-frame iframe{width:100%;height:340px;border:0;display:block}@media(max-width:700px){.map-frame iframe{height:280px}}
+
+/* Premium photography refresh — original page structure and interactions retained */
+.hero{
+  position:relative;
+  min-height:min(100svh,900px);
+  background-color:var(--bg);
+  background-image:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 96%,transparent) 29%,color-mix(in srgb,var(--bg) 76%,transparent) 44%,transparent 67%),url("assets/hero-food.jpg");
+  background-size:cover;
+  background-position:center,right center;
+  background-repeat:no-repeat;
+}
+.hero-in{position:relative;z-index:2;max-width:620px;padding:1.2rem 0}
+.hero p{max-width:33em;text-wrap:pretty}
+.b .bento img{display:block}
+.b img{filter:saturate(1.06) contrast(1.03)}
+.mp{background:var(--bg2)}
+.mp img{display:block;object-fit:cover}
+.mi:hover .mp img{transform:scale(1.055)}
+.ph{overflow:hidden}
+@media(max-width:800px){
+  .hero{min-height:88svh;background-image:linear-gradient(90deg,color-mix(in srgb,var(--bg) 96%,transparent),color-mix(in srgb,var(--bg) 82%,transparent)),url("assets/hero-food.jpg");background-position:center,right center}
+  .hero-in{max-width:100%;padding-top:5rem}
+}
+@media(max-width:480px){.hero{min-height:92svh}.hero p{font-size:1rem}.chips{gap:.45rem}.chips span{font-size:.76rem}}
+</style></head><body data-v="home">
+<div id="bar"></div><canvas id="gl" aria-hidden="true"></canvas>
+<nav><a href="#home" class="logo">The Global <i>Table</i></a>
+<div class="l nl"><a href="#home" data-s="story">Story</a><a href="#menu">Menu</a><a href="#home" data-s="reviews">Reviews</a><a href="#home" data-s="visit">Visit</a></div>
+<div class="r"><button id="th" class="ib" aria-label="Toggle theme">◐</button><button class="ib" data-act="cart" aria-label="Open your order"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 7h12l1 13H5zM9 7a3 3 0 016 0"/></svg><i id="cc">0</i></button><a class="btn s" id="acct" href="#account">Sign in</a></div></nav>
+<main id="top"><div class="view on" id="v-home"><header class="hero"><div class="hero-in">
+<div class="hi" style="--i:0">थे ग्लोबल टेबल</div>
+<h1 style="--i:1">Every table,<br><em>a whole world.</em></h1>
+<p style="--i:2">A playful fusion kitchen in Airoli — street bites, Indo-Chinese favourites, Mexican-inspired quesadillas, loaded pizzas, fresh salads and cool sips.</p>
+<div class="row" style="--i:3"><a class="btn" href="#menu">Order online</a><a class="btn o" href="#home" data-s="sig">Explore dishes</a></div>
+<div class="row chips" style="--i:4"><span>★ 4.9 on Google</span><span>Dine-in</span><span>Kerbside pickup</span><span>No-contact delivery</span></div></div></header><div class="mq"><div>Street Bites <b>✦ Global Fusion ✦</b> Fresh Salads <b>✦ Cool Sips ✦</b> </div></div>
+
+  <section id="story"><div class="wrap">
+    <div class="eye">Our story</div>
+    <p>The Global Table is a neighbourhood café in Airoli where every plate carries a little of somewhere else. We cook with care, plate with creativity, and keep the room spotless and warm — so a quick coffee turns into the long catch-up you didn’t plan. Come hungry, stay for the people.</p>
+    <div class="stats">
+      <div class="stat rv"><b data-n="4.9" data-d="1">4.9</b><span>Google rating</span></div>
+      <div class="stat rv" style="--d:.1s"><b data-n="19">19</b><span>Guest reviews, and counting</span></div>
+      <div class="stat rv" style="--d:.2s"><b data-n="3">3</b><span>Ways to enjoy: dine-in, kerbside pickup, no-contact delivery</span></div>
+    </div>
+  </div></section>
+
+  <section id="sig"><div class="wrap"><div class="sh rv"><div><div class="eye">Signature plates</div><h2>Made to be<br>shared.</h2></div><a class="btn o" href="#menu">View full menu →</a></div><div class="bento">
+<a class="b rv" href="#menu" style="grid-area:a"><img data-i="pizza" alt="Thecha pizza"><div><small>Signature</small>Thecha Paneer Pizza</div></a>
+<a class="b rv" href="#menu" style="grid-area:b;--d:.1s"><img data-i="coffee" alt="Fresh fusion food"><div><small>Cool & refreshing</small>Blue Caracao Mojito</div></a>
+<a class="b rv" href="#menu" style="grid-area:c;--d:.15s"><img data-i="sandwich" alt="Cheesy sandwich"><div><small>Made fresh</small>Cheesy Sandwich</div></a>
+<a class="b rv" href="#menu" style="grid-area:d;--d:.2s"><img data-i="pasta" alt="Fresh pasta"><div><small>Italian-inspired</small>Green Chutney Pasta</div></a>
+<a class="b t rv" href="#menu" style="grid-area:e;--d:.1s">Browse the<br>full menu →</a>
+<a class="b rv" href="#menu" style="grid-area:f;--d:.2s"><img data-i="cake" alt="Choco lava cake"><div><small>Something sweet</small>Apple Mousse</div></a>
+</div></div></section><section id="reviews"><div class="wrap">
+    <div class="eye">Kind words</div><h2 class="rv">Loved by<br>the neighbourhood.</h2>
+    <div class="tags rv"><span>Thecha</span><span>Pizza</span><span>Hospitality</span><span>Atmosphere</span></div>
+    <div class="grid">
+      <div class="rv"><div class="rev"><div class="q">“</div><q>Absolutely loved the experience! Salad and Thecha pizza was just amazing — quality, creativity, cleanliness and customer experience.</q><div class="st">★★★★★</div><small><b>Piyu Jagtap</b> · 5 reviews</small></div></div>
+      <div class="rv" style="--d:.1s"><div class="rev"><div class="q">“</div><q>A fantastic café with a welcoming atmosphere, delicious food and great hospitality.</q><div class="st">★★★★★</div><small><b>Pratik Kapure</b> · 3 reviews</small></div></div>
+      <div class="rv" style="--d:.2s"><div class="rev"><div class="q">“</div><q>Amazing food and vibe! Staff is very friendly and welcoming.</q><div class="st">★★★★★</div><small><b>Rishi Vaghela</b> · Local Guide</small></div></div>
+    </div>
+  </div></section>
+
+  <section id="visit"><div class="wrap visit">
+    <div class="info rv">
+      <div class="eye">Find us</div><h2>Pull up<br>a chair.</h2>
+      <p><strong>The Global Table</strong></p>
+      <p>Airoli, Navi Mumbai, Maharashtra, India</p>
+      <p>For current opening hours, please check the café’s Google listing.</p>
+      <p><a href="tel:+919833408084">Priyanka · 98334 08084</a><br><a href="tel:+917021728628">Nikhil · 70217 28608</a></p>
+      <div class="row"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=19.1612737,72.991402" target="_blank" rel="noopener">Get directions</a><a class="btn o" href="#menu">Explore menu</a></div>
+    </div>
+    <ul class="box rv" style="--d:.15s"><li>Dine-in</li><li>Kerbside pickup</li><li>No-contact delivery</li><li>Find us on Google Maps</li></ul>
+    <div class="map-frame rv"><iframe title="The Global Table location map" src="https://www.google.com/maps?q=19.1612737,72.991402&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  </div></section>
+</div>
+<section class="view pg" id="v-menu"></section><section class="view pg" id="v-account"></section><section class="view pg" id="v-admin"></section></main>
+<footer><div class="fg"><span>© 2026 The Global Table · Airoli, Navi Mumbai</span><div class="fl"><a href="#menu">Menu</a><a href="#account">Account</a><a href="#admin">Staff login</a></div></div></footer>
+<aside id="cart"></aside><div id="bd" data-act="cart"></div><div id="toast" role="status"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(()=>{
+const $=(s,e=document)=>e.querySelector(s),$$=(s,e=document)=>[...e.querySelectorAll(s)],root=document.documentElement;
+let sync=()=>{},P=0;
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach(el=>io.observe(el));
+// count-up
+const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const t=+e.target.dataset.n,d=+e.target.dataset.d||0,t0=performance.now();(function f(n){const k=Math.min(1,(n-t0)/1400);e.target.textContent=(t*(1-Math.pow(1-k,3))).toFixed(d);if(k<1)requestAnimationFrame(f)})(t0)}),{threshold:.6});
+$$('[data-n]').forEach(el=>co.observe(el));
+// word-by-word story reveal
+const sp=$('#story p');sp.innerHTML=sp.textContent.trim().split(/\s+/).map(w=>`<span>${w}</span>`).join(' ');
+const ws=$$('span',sp);
+// marquee
+const mq=$('.mq div');mq.innerHTML=mq.innerHTML.repeat(5);
+const bar=$('#bar'),hero=$('.hero-in');
+function onScroll(){
+  const sy=scrollY,max=root.scrollHeight-innerHeight;P=max>0?sy/max:0;
+  bar.style.transform=`scaleX(${P})`;mq.style.transform=`translateX(${-sy*.4}px)`;
+  hero.style.transform=`translateY(${sy*.18}px)`;hero.style.opacity=Math.max(0,1-sy/innerHeight*1.1);
+  const r=sp.getBoundingClientRect(),p=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.15)));
+  ws.forEach((w,i)=>w.classList.toggle('on',i<p*ws.length*1.1));
+}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+// 3D tilt cards
+$$('.card').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(800px) rotateX(${-y*10}deg) rotateY(${x*12}deg) translateY(-4px)`});c.addEventListener('pointerleave',()=>c.style.transform='')});
+// theme toggle
+$('#th').onclick=()=>{const d=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;root.dataset.theme=d?'light':'dark';sync()};
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>setTimeout(()=>sync(),50));
+
+
+const IMG={"sandwich":"assets/sandwich-original.jpg","pasta":"assets/pasta-original.jpg","pizza":"assets/pizza.jpg","cake":"assets/cake-original.jpg","coffee":"assets/drinks.jpg","street":"assets/street-bites.jpg","chinese":"assets/indo-chinese.jpg","mexican":"assets/mexican.jpg","salad":"assets/salads.jpg","drinks":"assets/drinks.jpg","cafe":"assets/cafe-interior.jpg","hero":"assets/hero-food.jpg"},CATS=['Street of London','China Ka Swad','Taste of Mexico','Mumbai Cha Raja','Street of Italy','Taste of USA','Fresh & Flavourful Salads','Kuch Meetha Ho Jaye','Haye Garmi'],ST=['Placed','Preparing','Ready','Completed','Cancelled'];
+const SEED=[["Street of London","French Fries (Salted)","Street of London favourite from The Global Table's fusion kitchen.",70,1,""],["Street of London","French Fries (Peri Peri)","Street of London favourite from The Global Table's fusion kitchen.",90,1,""],["Street of London","Wedges (Veg)","Street of London favourite from The Global Table's fusion kitchen.",250,1,""],["Street of London","Wedges (Non-Veg)","Street of London favourite from The Global Table's fusion kitchen.",270,0,""],["Street of London","Chicken Fries — Small","Street of London favourite from The Global Table's fusion kitchen.",160,0,""],["Street of London","Chicken Fries — Medium","Street of London favourite from The Global Table's fusion kitchen.",180,0,""],["Street of London","Chicken Fries — Large","Street of London favourite from The Global Table's fusion kitchen.",200,0,""],["Street of London","Mozzarella Sticks — Small","Street of London favourite from The Global Table's fusion kitchen.",160,1,""],["Street of London","Mozzarella Sticks — Medium","Street of London favourite from The Global Table's fusion kitchen.",180,1,""],["Street of London","Mozzarella Sticks — Large","Street of London favourite from The Global Table's fusion kitchen.",200,1,""],["Street of London","Cheese Pizza Finger — Small","Street of London favourite from The Global Table's fusion kitchen.",160,1,""],["Street of London","Cheese Pizza Finger — Medium","Street of London favourite from The Global Table's fusion kitchen.",180,1,""],["Street of London","Cheese Pizza Finger — Large","Street of London favourite from The Global Table's fusion kitchen.",200,1,""],["Street of London","Chicken Pepper Garlic Finger — Small","Street of London favourite from The Global Table's fusion kitchen.",150,0,""],["Street of London","Chicken Pepper Garlic Finger — Medium","Street of London favourite from The Global Table's fusion kitchen.",180,0,""],["Street of London","Chicken Pepper Garlic Finger — Large","Street of London favourite from The Global Table's fusion kitchen.",200,0,""],["Street of London","Loaded Wedges with Veg Crispy Ball (Topping of Your Choice)","Street of London favourite from The Global Table's fusion kitchen.",200,1,""],["Street of London","Loaded Wedges with Non-Veg Crispy Ball (Topping of Your Choice)","Street of London favourite from The Global Table's fusion kitchen.",220,0,""],["Street of London","Chicken Fries Sticks","Street of London favourite from The Global Table's fusion kitchen.",180,0,""],["Street of London","Cheese & Jalapeno Poppers","Street of London favourite from The Global Table's fusion kitchen.",180,1,""],["Street of London","Cheese Pizza Fingers","Street of London favourite from The Global Table's fusion kitchen.",180,1,""],["Street of London","Chicken Peppers Garlic Finger","Street of London favourite from The Global Table's fusion kitchen.",180,0,""],["Street of London","Cheese Garlic Bread","Street of London favourite from The Global Table's fusion kitchen.",90,1,""],["Street of London","Purple Schezwan Potato Bite","Street of London favourite from The Global Table's fusion kitchen.",190,1,""],["Street of London","Purple Schezwan Chicken Bite","Street of London favourite from The Global Table's fusion kitchen.",210,0,""],["China Ka Swad","Green Schewzan Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",265,1,""],["China Ka Swad","Purple Schewzan Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",280,1,""],["China Ka Swad","Schewzan Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",200,1,""],["China Ka Swad","Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",180,1,""],["China Ka Swad","Green Schewzan Chicken Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",290,0,""],["China Ka Swad","Purple Schewzan Chicken Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",300,0,""],["China Ka Swad","Schewzan Fried Rice — Chicken","China Ka Swad favourite from The Global Table's fusion kitchen.",260,0,""],["China Ka Swad","Fried Rice — Chicken","China Ka Swad favourite from The Global Table's fusion kitchen.",230,0,""],["China Ka Swad","Green Schewzan Paneer","China Ka Swad favourite from The Global Table's fusion kitchen.",275,1,""],["China Ka Swad","Green Schewzan Chicken","China Ka Swad favourite from The Global Table's fusion kitchen.",290,0,""],["China Ka Swad","Green Sauce Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",270,1,""],["China Ka Swad","Green Sauce Chicken Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",295,0,""],["China Ka Swad","Purple Sauce Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",285,1,""],["China Ka Swad","Purple Sauce Chicken Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",300,0,""],["China Ka Swad","Smoked Schezwan Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",275,1,""],["China Ka Swad","Smoked Schezwan Chicken Fried Rice","China Ka Swad favourite from The Global Table's fusion kitchen.",290,0,""],["Taste of Mexico","Veggie Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",200,1,""],["Taste of Mexico","Tandoori Chicken Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",220,0,""],["Taste of Mexico","Chilli Garlic Potato Schewzan Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",200,1,""],["Taste of Mexico","Schewzan Sheekh Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",220,0,""],["Taste of Mexico","Mexican Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",200,1,""],["Taste of Mexico","Chicken Pop Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",220,0,""],["Taste of Mexico","Chilli Cheese Corn Quesidella","Taste of Mexico favourite from The Global Table's fusion kitchen.",200,1,""],["Taste of Mexico","Chicken Pepper Garlic Quesadilla","Taste of Mexico favourite from The Global Table's fusion kitchen.",220,0,""],["Taste of Mexico","Loaded Waffer Nachos","Taste of Mexico favourite from The Global Table's fusion kitchen.",220,1,""],["Mumbai Cha Raja","Masala Chips Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",90,1,""],["Mumbai Cha Raja","Pizza Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",180,1,""],["Mumbai Cha Raja","Smoked Mushroom Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",170,1,""],["Mumbai Cha Raja","Tandoori Chicken Tikka Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",190,0,""],["Mumbai Cha Raja","Chilli Garlic Omlette Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",180,0,""],["Mumbai Cha Raja","Chicken Malai Tikka Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",200,0,""],["Mumbai Cha Raja","Chicken Grill Patty Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",200,0,""],["Mumbai Cha Raja","Vegetable Grill Patty Pav Burger","Mumbai Cha Raja favourite from The Global Table's fusion kitchen.",180,1,""],["Street of Italy","Mumbai Chutney Sauce Pizza (Paneer)","Street of Italy favourite from The Global Table's fusion kitchen.",280,1,""],["Street of Italy","Mumbai Chutney Sauce Pizza (Chicken)","Street of Italy favourite from The Global Table's fusion kitchen.",290,0,""],["Street of Italy","Schezwan Maggi Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",270,1,""],["Street of Italy","Schezwan Maggi Pizza — Chicken","Street of Italy favourite from The Global Table's fusion kitchen.",290,0,""],["Street of Italy","Thecha Pizza Sauce (Paneer)","Street of Italy favourite from The Global Table's fusion kitchen.",270,1,""],["Street of Italy","Thecha Pizza Sauce (Chicken)","Street of Italy favourite from The Global Table's fusion kitchen.",290,0,""],["Street of Italy","Paneer Makhni Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",260,1,""],["Street of Italy","Chicken Makhni Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",280,0,""],["Street of Italy","Peri Peri Paneer Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",270,1,""],["Street of Italy","Peri Peri Chicken Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",280,0,""],["Street of Italy","Methi Matar Malai Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",290,1,""],["Street of Italy","Chatpata Nachos Pizza","Street of Italy favourite from The Global Table's fusion kitchen.",270,1,""],["Street of Italy","Smoked Red Sauce Pasta","Street of Italy favourite from The Global Table's fusion kitchen.",250,1,""],["Street of Italy","Green Chutney Pasta","Street of Italy favourite from The Global Table's fusion kitchen.",220,1,""],["Taste of USA","BBQ Grill Chicken","Taste of USA favourite from The Global Table's fusion kitchen.",225,0,""],["Taste of USA","BBQ Spicy Paneer Patty","Taste of USA favourite from The Global Table's fusion kitchen.",250,1,""],["Taste of USA","Cheesy Sandwich","Taste of USA favourite from The Global Table's fusion kitchen.",180,1,""],["Taste of USA","Chicken Cheese Ball Sandwich","Taste of USA favourite from The Global Table's fusion kitchen.",260,0,""],["Fresh & Flavourful Salads","Mix Exotic Vegetable Stir Fry Salad","Fresh & Flavourful Salads favourite from The Global Table's fusion kitchen.",200,1,""],["Fresh & Flavourful Salads","Mix Veggies Non-Veg Stir Fry Salad","Fresh & Flavourful Salads favourite from The Global Table's fusion kitchen.",220,0,""],["Fresh & Flavourful Salads","Pasta Salad (Veg)","Fresh & Flavourful Salads favourite from The Global Table's fusion kitchen.",210,1,""],["Fresh & Flavourful Salads","Pasta Salad (Non-Veg)","Fresh & Flavourful Salads favourite from The Global Table's fusion kitchen.",240,0,""],["Kuch Meetha Ho Jaye","Cheesy Pineapple Sandwich","Kuch Meetha Ho Jaye favourite from The Global Table's fusion kitchen.",150,1,""],["Kuch Meetha Ho Jaye","Apple Mousse","Kuch Meetha Ho Jaye favourite from The Global Table's fusion kitchen.",150,1,""],["Haye Garmi","Blue Caracao Mojito","Haye Garmi favourite from The Global Table's fusion kitchen.",120,-1,""],["Haye Garmi","Spiced Guava & Passion Fruit Mojito","Haye Garmi favourite from The Global Table's fusion kitchen.",120,-1,""],["Haye Garmi","Pink Lychee Pop","Haye Garmi favourite from The Global Table's fusion kitchen.",120,-1,""],["Haye Garmi","Tropical Passion Fizz","Haye Garmi favourite from The Global Table's fusion kitchen.",120,-1,""],["Haye Garmi","Strawberry Mojito","Haye Garmi favourite from The Global Table's fusion kitchen.",120,-1,""],["Haye Garmi","Strawberry Coconut Splash","Haye Garmi favourite from The Global Table's fusion kitchen.",120,-1,""],["Haye Garmi","Irish Bailey Shake Frappe","Haye Garmi favourite from The Global Table's fusion kitchen.",180,-1,""],["Haye Garmi","Strawberry Cheesecake Shake","Haye Garmi favourite from The Global Table's fusion kitchen.",180,-1,""],["Haye Garmi","Cold Coffee French Vanilla","Haye Garmi favourite from The Global Table's fusion kitchen.",150,-1,""]];
+$$('[data-i]').forEach(i=>i.src=IMG[i.dataset.i]);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>'&#'+c.charCodeAt(0)+';'),inr=n=>'₹'+(+n).toLocaleString('en-IN');
+const mem={},ld=(k,d)=>{try{const v=localStorage.getItem(k);if(v)return JSON.parse(v)}catch(e){}return k in mem?mem[k]:d},sv=(k,v)=>{mem[k]=v;try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+let menu=ld('gt_menu',null);
+const MENU_VERSION=2;
+if(!Array.isArray(menu)||ld('gt_menu_version',0)<MENU_VERSION){
+ const custom=Array.isArray(menu)?menu.filter(m=>m&&m.id&&!/^m\d+$/.test(String(m.id))):[];
+ menu=SEED.map((a,i)=>({id:'m'+i,c:a[0],n:a[1],d:a[2],p:a[3],v:a[4],i:a[5],a:1})).concat(custom);
+ sv('gt_menu',menu);sv('gt_menu_version',MENU_VERSION);
+}
+let cart=ld('gt_cart',{}),users=ld('gt_users',[]),sess=ld('gt_sess',null),orders=ld('gt_orders',null),cat='All',q='',tab='orders',mode='in',view='home';
+if(!Array.isArray(orders)){orders=[];sv('gt_orders',orders)}
+const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2300)};
+const err=m=>{const e=$('#err');if(e)e.textContent=m};
+const go=s=>{const f=()=>{const el=$('#'+s);el&&el.scrollIntoView({behavior:'smooth'})};if(view!=='home'){location.hash='home';setTimeout(f,120)}else f()};
+const openCart=()=>{$('#cart').classList.toggle('open');$('#bd').classList.toggle('on')};
+const categoryPhoto=c=>({"Street of London":"street","China Ka Swad":"chinese","Taste of Mexico":"mexican","Mumbai Cha Raja":"street","Street of Italy":"pizza","Taste of USA":"sandwich","Fresh & Flavourful Salads":"salad","Kuch Meetha Ho Jaye":"cake","Haye Garmi":"drinks"}[c]||"street");
+const pic=m=>{const key=m.i&&IMG[m.i]?m.i:categoryPhoto(m.c);return IMG[key]?`<img src="${IMG[key]}" alt="${esc(m.n)}" loading="lazy">`:`<span>${esc(m.n[0])}</span>`};
+// menu
+function renderMenu(){$('#v-menu').innerHTML=`<div class="sh"><div><div class="eye">Full menu</div><h2>Order from<br>our table.</h2></div><input id="q" class="in" placeholder="Search dishes…" value="${esc(q)}"></div><div class="tags" id="chips"></div><div class="mg" id="mg"></div><p class="note">Menu and prices are based on the café’s current digital menu. Dietary labels are shown where supplied; confirm ingredients and preparation with the café. Availability may change.</p>`;chips();grid()}
+const chips=()=>$('#chips').innerHTML=['All',...CATS].map(c=>`<button class="chip${c===cat?' on':''}" data-act="cat" data-v="${c}">${c}</button>`).join('');
+const grid=()=>{const l=menu.filter(m=>(cat==='All'||m.c===cat)&&(m.n+m.d).toLowerCase().includes(q.toLowerCase()));$('#mg').innerHTML=l.map(m=>`<article class="mi${m.a?'':' so'}"><div class="mp">${pic(m)}</div><div class="mb"><div class="mt"><h3>${esc(m.n)}</h3><b>${inr(m.p)}</b></div><p>${esc(m.d)}</p><div class="mf"><span class="vg${m.v===1?'':m.v===0?' n':' u'}" title="${m.v===1?'Veg':m.v===0?'Non-veg':'Dietary label not specified'}"></span>${m.a?`<button class="btn s" data-act="add" data-v="${m.id}">Add +</button>`:'<span class="pill">Sold out</span>'}</div></div></article>`).join('')||'<p class="note">No dishes found.</p>'};
+// cart
+function renderCart(){const ids=Object.keys(cart).filter(id=>menu.some(m=>m.id===id)),n=ids.reduce((a,id)=>a+cart[id],0),tot=ids.reduce((a,id)=>a+cart[id]*menu.find(m=>m.id===id).p,0);
+ $('#cart').innerHTML=`<div class="ch"><h3>Your order</h3><button class="ib" data-act="cart" aria-label="Close">✕</button></div><div class="cl">${ids.map(id=>{const m=menu.find(m=>m.id===id);return`<div class="ci"><div><b>${esc(m.n)}</b><p>${inr(m.p)}</p></div><div class="qt"><button data-act="dec" data-v="${id}">−</button>${cart[id]}<button data-act="inc" data-v="${id}">+</button></div></div>`}).join('')||'<p class="note">Your order is empty — add something delicious.</p>'}</div>${ids.length?`<div class="cf"><select id="ot" class="in"><option>Dine-in</option><option>Kerbside pickup</option><option>No-contact delivery</option></select><div class="tr"><span>Total</span><b>${inr(tot)}</b></div><button class="btn" data-act="order">Place order</button></div>`:''}`;$('#cc').textContent=n;$('#cc').style.display=n?'':'none'}
+function order(){if(!sess){openCart();location.hash='account';toast('Please sign in to place your order');return}
+ const it=Object.keys(cart).map(id=>{const m=menu.find(m=>m.id===id);return m&&{n:m.n,q:cart[id],p:m.p}}).filter(Boolean);if(!it.length)return;
+ const o={id:'GT'+(1001+orders.length),em:sess.email,nm:sess.name,it,t:it.reduce((a,i)=>a+i.p*i.q,0),ty:$('#ot').value,s:'Placed',ts:Date.now()};
+ const lines=it.map(i=>`• ${i.n} × ${i.q} = ${inr(i.p*i.q)}`).join('\n');
+ const msg=`Hello The Global Table! I would like to place an order.\n\nOrder: ${o.id}\nName: ${o.nm}\nOrder type: ${o.ty}\n\n${lines}\n\nTotal: ${inr(o.t)}\n\nPlease confirm availability and the final order.`;
+ orders.push(o);sv('gt_orders',orders);cart={};sv('gt_cart',cart);openCart();render();window.open('https://wa.me/919833408084?text='+encodeURIComponent(msg),'_blank','noopener');toast('Order details opened in WhatsApp — send to confirm')}
+// auth
+const authBox=m=>`<div class="auth"><div class="eye">${m==='admin'?'Staff only':m==='in'?'Welcome back':'Join the table'}</div><h2>${m==='admin'?'Admin login':m==='in'?'Sign in':'Create account'}</h2>${m==='up'?'<input id="a-n" class="in" placeholder="Full name">':''}<input id="a-e" class="in" type="email" placeholder="Email"><input id="a-p" class="in" type="password" placeholder="Password"><p class="err" id="err"></p><button class="btn" data-act="${m==='admin'?'alogin':m==='in'?'login':'signup'}">${m==='up'?'Create account':'Sign in'}</button>${m==='admin'?'<p class="note">Demo admin access for preview only. Before public launch, connect a secure backend and replace these demo credentials.</p>':`<p class="note">${m==='in'?'New here?':'Already a member?'} <a href="#account" data-act="mode" class="ul">${m==='in'?'Create an account':'Sign in'}</a></p>`}</div>`;
+function login(adm){const E=$('#a-e').value.trim().toLowerCase(),W=$('#a-p').value;
+ if(E==='admin@globaltable.in'&&W==='admin123')sess={name:'Admin',email:E,role:'admin'};
+ else{if(adm)return err('Admin access only.');const u=users.find(u=>u.e===E&&u.p===W);if(!u)return err('Incorrect email or password.');sess={name:u.n,email:E,role:'user'}}
+ sv('gt_sess',sess);toast('Welcome, '+sess.name.split(' ')[0]);if(sess.role==='admin'&&!adm)location.hash='admin';render()}
+function signup(){const n=$('#a-n').value.trim(),E=$('#a-e').value.trim().toLowerCase(),W=$('#a-p').value;
+ if(!n||!/^\S+@\S+\.\S+$/.test(E)||W.length<6)return err('Enter your name, a valid email and a 6+ character password.');
+ if(users.some(u=>u.e===E))return err('That email is already registered.');
+ users.push({n,e:E,p:W});sv('gt_users',users);sess={name:n,email:E,role:'user'};sv('gt_sess',sess);toast('Account created');render()}
+function renderAcct(){const el=$('#v-account');if(!sess){el.innerHTML=authBox(mode);return}
+ const mine=orders.filter(o=>o.em===sess.email).reverse();
+ el.innerHTML=`<div class="sh"><div><div class="eye">My account</div><h2>Hello, ${esc(sess.name.split(' ')[0])}.</h2></div><div class="row">${sess.role==='admin'?'<a class="btn" href="#admin">Admin dashboard</a>':'<a class="btn" href="#menu">Order now</a>'}<button class="btn o" data-act="logout">Sign out</button></div></div><h3 style="margin-bottom:1rem">Your orders</h3>${mine.length?mine.map(o=>`<div class="ord"><div><b>${o.id}</b> · ${new Date(o.ts).toLocaleDateString('en-IN')}<p>${o.it.map(i=>esc(i.n)+' ×'+i.q).join(', ')}</p></div><div class="rt"><b>${inr(o.t)}</b><span class="pill">${o.s}</span></div></div>`).join(''):'<p class="note">No orders yet — your first one is waiting on the menu.</p>'}`}
+// admin
+const ordersT=()=>`<div class="tw"><table><tr><th>ID</th><th>Customer</th><th>Items</th><th>Total</th><th>Type</th><th>Status</th></tr>${orders.slice().reverse().map(o=>`<tr><td>${o.id}</td><td>${esc(o.nm)}</td><td>${o.it.map(i=>esc(i.n)+' ×'+i.q).join(', ')}</td><td>${inr(o.t)}</td><td>${o.ty}</td><td><select class="in" data-st="${o.id}">${ST.map(s=>`<option${s===o.s?' selected':''}>${s}</option>`).join('')}</select></td></tr>`).join('')}</table></div>`;
+const menuT=()=>`<div class="af"><input id="n-n" class="in" placeholder="Dish name"><select id="n-c" class="in">${CATS.map(c=>`<option>${c}</option>`).join('')}</select><input id="n-p" class="in" type="number" placeholder="Price ₹"><input id="n-d" class="in" placeholder="Description"><select id="n-i" class="in"><option value="">No photo</option>${Object.keys(IMG).map(k=>`<option>${k}</option>`).join('')}</select><button class="btn" data-act="addItem">Add dish</button></div><div class="tw"><table><tr><th>Dish</th><th>Category</th><th>Price ₹</th><th>Status</th><th></th></tr>${menu.map(m=>`<tr><td>${esc(m.n)}</td><td>${m.c}</td><td><input class="in sm" type="number" value="${m.p}" data-pr="${m.id}"></td><td><button class="chip${m.a?' on':''}" data-act="avail" data-v="${m.id}">${m.a?'Available':'Sold out'}</button></td><td><button class="chip" data-act="del" data-v="${m.id}">Delete</button></td></tr>`).join('')}</table></div>`;
+function renderAdmin(){const el=$('#v-admin');if(!sess||sess.role!=='admin'){el.innerHTML=authBox('admin');return}
+ const act=orders.filter(o=>['Placed','Preparing','Ready'].includes(o.s)).length,rev=orders.filter(o=>o.s!=='Cancelled').reduce((a,o)=>a+o.t,0);
+ el.innerHTML=`<div class="dash"><div class="sh"><div><div class="eye">Admin</div><h2>Dashboard</h2></div><button class="btn o" data-act="logout">Sign out</button></div><div class="stats">${[['Total orders',orders.length],['Revenue',inr(rev)],['Active now',act],['Dishes live',menu.filter(m=>m.a).length+'/'+menu.length]].map(s=>`<div class="stat"><b>${s[1]}</b><span>${s[0]}</span></div>`).join('')}</div><div class="tags" style="margin:2rem 0 1rem">${[['orders','Orders'],['menu','Menu manager']].map(t=>`<button class="chip${t[0]===tab?' on':''}" data-act="tab" data-v="${t[0]}">${t[1]}</button>`).join('')}</div>${tab==='orders'?ordersT():menuT()}</div>`}
+function addItem(){const n=$('#n-n').value.trim(),p=+$('#n-p').value;if(!n||!p)return toast('Add a name and price');menu.push({id:'m'+Date.now(),c:$('#n-c').value,n,d:$('#n-d').value.trim()||'New on the menu.',p,v:1,i:$('#n-i').value,a:1});sv('gt_menu',menu);renderAdmin();toast('Dish added')}
+// events + router
+function render(){renderCart();$('#acct').textContent=sess?sess.name.split(' ')[0]:'Sign in';if(view==='menu')renderMenu();if(view==='account')renderAcct();if(view==='admin')renderAdmin()}
+addEventListener('click',e=>{
+ const s=e.target.closest('[data-s]');if(s){e.preventDefault();go(s.dataset.s);return}
+ const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act,v=b.dataset.v;
+ if(a==='cat'){cat=v;chips();grid()}
+ else if(a==='add'){cart[v]=(cart[v]||0)+1;sv('gt_cart',cart);renderCart();toast('Added to your order')}
+ else if(a==='inc'||a==='dec'){cart[v]=(cart[v]||0)+(a==='inc'?1:-1);if(cart[v]<1)delete cart[v];sv('gt_cart',cart);renderCart()}
+ else if(a==='cart')openCart();
+ else if(a==='order')order();
+ else if(a==='login'||a==='alogin')login(a==='alogin');
+ else if(a==='signup')signup();
+ else if(a==='mode'){e.preventDefault();mode=mode==='in'?'up':'in';renderAcct()}
+ else if(a==='logout'){sess=null;sv('gt_sess',null);render();toast('Signed out')}
+ else if(a==='tab'){tab=v;renderAdmin()}
+ else if(a==='avail'){const m=menu.find(m=>m.id===v);m.a=m.a?0:1;sv('gt_menu',menu);renderAdmin()}
+ else if(a==='del'){menu=menu.filter(m=>m.id!==v);sv('gt_menu',menu);renderAdmin()}
+ else if(a==='addItem')addItem()});
+addEventListener('change',e=>{const t=e.target;
+ if(t.dataset.st){const o=orders.find(o=>o.id===t.dataset.st);o.s=t.value;sv('gt_orders',orders);renderAdmin()}
+ if(t.dataset.pr){const m=menu.find(m=>m.id===t.dataset.pr);m.p=Math.max(0,+t.value||0);sv('gt_menu',menu);toast('Price updated')}});
+addEventListener('input',e=>{if(e.target.id==='q'){q=e.target.value;grid()}});
+addEventListener('scroll',()=>{if(view==='home')$$('.b img').forEach(i=>{const r=i.parentNode.getBoundingClientRect();i.style.setProperty('--py',((r.top+r.height/2-innerHeight/2)*-.07)+'px')})},{passive:true});
+function route(){const h=location.hash.slice(1);view=['menu','account','admin'].includes(h)?h:'home';document.body.dataset.v=view;$$('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+view));$('#cart').classList.remove('open');$('#bd').classList.remove('on');render();if(h!=='home'||!history.state)scrollTo(0,0);onScroll()}
+addEventListener('hashchange',route);route();
+// ===== 3D hero: cup + orbiting globe + beans =====
+const cv=$('#gl');
+if(window.THREE){try{
+  const R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+  const sc=new THREE.Scene(),cam=new THREE.PerspectiveCamera(40,1,.1,50);cam.position.z=9;
+  sc.add(new THREE.AmbientLight(0xffffff,.75));
+  const kl=new THREE.DirectionalLight(0xffffff,1.1);kl.position.set(3,6,5);sc.add(kl);
+  const pl=new THREE.PointLight(0x9be7b5,1.2,20);pl.position.set(-4,1,3);sc.add(pl);
+  const g=new THREE.Group();sc.add(g);
+  const cupG=new THREE.Group();cupG.position.y=-.9;g.add(cupG);
+  const V=(x,y)=>new THREE.Vector2(x,y),M=(c,r)=>new THREE.MeshStandardMaterial({color:c,roughness:r});
+  const white=new THREE.MeshStandardMaterial({color:0xfff6e8,roughness:.25,side:THREE.DoubleSide});
+  const cup=new THREE.Mesh(new THREE.LatheGeometry([V(0,0),V(.5,0),V(.56,.06),V(.92,1.15),V(.86,1.17),V(.8,1.14),V(.7,.22),V(0,.18)],56),white);cup.position.y=.1;
+  const handle=new THREE.Mesh(new THREE.TorusGeometry(.3,.07,12,28,Math.PI),white);handle.rotation.z=-Math.PI/2;handle.position.set(.84,.75,0);
+  const cof=new THREE.Mesh(new THREE.CylinderGeometry(.76,.76,.02,48),M(0x4a2610,.4));cof.position.y=1;
+  const foam=new THREE.Mesh(new THREE.CylinderGeometry(.42,.42,.02,40),M(0xc58a52,.5));foam.position.y=1.005;
+  const sauMat=M(0xc4501f,.5),sau=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1.1,.12,56),sauMat);sau.position.y=.06;
+  cupG.add(cup,handle,cof,foam,sau);
+  // globe
+  const wMat=new THREE.MeshBasicMaterial({wireframe:true,transparent:true,opacity:.24});
+  const globe=new THREE.Mesh(new THREE.SphereGeometry(2.4,30,20),wMat);globe.position.y=.6;g.add(globe);
+  const dotM=new THREE.MeshBasicMaterial({color:0xd9f99d});
+  for(let i=0;i<18;i++){const d=new THREE.Mesh(new THREE.SphereGeometry(.07,8,8),dotM),a=Math.random()*6.28,b=Math.acos(2*Math.random()-1);d.position.set(2.4*Math.sin(b)*Math.cos(a),2.4*Math.cos(b),2.4*Math.sin(b)*Math.sin(a));globe.add(d)}
+  const ringM=new THREE.MeshBasicMaterial({transparent:true,opacity:.5}),ring=new THREE.Mesh(new THREE.TorusGeometry(3,.012,8,120),ringM);ring.rotation.x=1.25;ring.position.y=.6;g.add(ring);
+  // beans
+  const bm=M(0x5b3217,.5);
+  const beans=[...Array(14)].map(()=>{const m=new THREE.Mesh(new THREE.SphereGeometry(.16,12,8),bm);m.scale.set(1,.7,.7);m.userData={a:Math.random()*6.28,r:2.6+Math.random()*.9,s:.15+Math.random()*.3,h:(Math.random()-.5)*3,k:Math.random()*6};g.add(m);return m});
+  // steam
+  const c=document.createElement('canvas');c.width=c.height=64;const cx2=c.getContext('2d'),gr=cx2.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(1,'rgba(255,255,255,0)');cx2.fillStyle=gr;cx2.fillRect(0,0,64,64);
+  const N=28,sp3=new Float32Array(N*3);for(let i=0;i<N;i++){sp3.set([(Math.random()-.5)*.6,Math.random()*1.8,(Math.random()-.5)*.6],i*3)}
+  const sg=new THREE.BufferGeometry();sg.setAttribute('position',new THREE.BufferAttribute(sp3,3));
+  const sm=new THREE.PointsMaterial({size:.45,map:new THREE.CanvasTexture(c),transparent:true,opacity:.3,depthWrite:false});
+  const steam=new THREE.Points(sg,sm);steam.position.y=1.3;cupG.add(steam);
+  // theme-aware colours
+  sync=()=>{const s=getComputedStyle(root),a=s.getPropertyValue('--accent').trim(),i=s.getPropertyValue('--ink').trim();[sauMat,wMat,ringM].forEach(m=>m.color.set(a));sm.color.set(i)};sync();
+  const resize=()=>{R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()};
+  resize();addEventListener('resize',resize);
+  let mx=0,my=0,smx=0,smy=0,cx=2.6,cy=0,last=performance.now();
+  addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+  (function frame(now){
+    const dt=Math.min(.05,(now-last)/1000),T=now/1000,w=innerWidth<800;last=now;
+    const tx=w?0:2.6*Math.cos(P*Math.PI*3),ty=(w?1.4:0)+Math.sin(P*Math.PI*6)*.4;
+    cx+=(tx-cx)*.06;cy+=(ty-cy)*.06;smx+=(mx-smx)*.05;smy+=(my-smy)*.05;
+    g.position.set(cx,cy,0);g.scale.setScalar(w?.62:1);
+    g.rotation.set(.38+smy*.3,smx*.5,0);
+    cupG.rotation.y=P*Math.PI*8+T*.3;globe.rotation.y=-T*.12-P*4;ring.rotation.z=T*.1;
+    beans.forEach((b,i)=>{const u=b.userData;u.a+=dt*u.s;b.position.set(Math.cos(u.a)*u.r,.6+u.h*.5+Math.sin(T+u.k)*.25,Math.sin(u.a)*u.r*.7);b.rotation.x+=dt*(.5+i*.05);b.rotation.y+=dt*.7});
+    const p=sg.attributes.position;for(let i=0;i<N;i++){let y=p.getY(i)+dt*.35;if(y>1.9)y=0;p.setY(i,y);p.setX(i,p.getX(i)+Math.sin(T*1.5+i)*.002)}p.needsUpdate=true;
+    cv.style.opacity=Math.max(w?.25:.4,1-scrollY/innerHeight*.6);
+    if(view==="home")R.render(sc,cam);requestAnimationFrame(frame)})(last);
+}catch(e){cv.remove()}}else cv.remove();
+})();
+</script></body></html>
